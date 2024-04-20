@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IoTApp</string>
+
+    <!--Strings-->
+    <string name="bienvenida">Bienvenido a la App IoT</string>
+    <string name="bntInicio">Ingresar</string>
+    <string name="bntCancel">Cancelar</string>
+    <string name="bntSave">Guardar</string>
+    <string name="id">Id</string>
+
+
+
+    <!--Hints-->
+    <string name="hint1">Usuario</string>
+    <string name="hint2">Contraseña</string>
+    <string name="hint3">Nombre del Sensor</string>
+    <string name="hint4">Tipo del sensor</string>
+    <string name="hint5">Valor</string>
+
+</resources>

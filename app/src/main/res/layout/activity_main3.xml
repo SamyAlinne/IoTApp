@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/tvNewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewId"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/etNewType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/etNewName"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/etNewValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint5"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/etNewType"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnNewSave"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="@string/bntSave"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewValue"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnNewCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="@string/bntCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewValue"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
